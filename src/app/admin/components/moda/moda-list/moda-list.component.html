@@ -1,0 +1,29 @@
+<h2>Administrador de Productos Moda</h2>
+<table [dataSource]="modaAdmin" mat-table class="mat-elevation-z8 full-width-table">
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let modaAdmin"> {{modaAdmin.id}} </td>
+    </ng-container>
+    <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef> Title </th>
+        <td mat-cell *matCellDef="let modaAdmin"> {{modaAdmin.title}} </td>
+    </ng-container>
+    <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef> Price </th>
+        <td mat-cell *matCellDef="let modaAdmin"> {{modaAdmin.price}} </td>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+    <td mat-cell *matCellDef="let modaAdmin">
+        <button mat-mini-fab color="primary" [routerLink]="['editM', modaAdmin]">
+            <mat-icon> <img src="assets/images/editPencil.svg" alt=""> </mat-icon>
+        </button>
+        <button mat-mini-fab color="warn" (click)="delete(modaAdmin.id)">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>    
+<button mat-raised-button routerLink="../createM">Crear Producto</button>

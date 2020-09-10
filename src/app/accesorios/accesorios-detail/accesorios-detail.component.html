@@ -1,0 +1,7 @@
+<div class="detalle">
+    <div *ngIf="accesoriosId">
+        <h3> {{ accesoriosId.title }} </h3>
+        <img [src]="accesoriosId.image" alt="Imagen Accesorio">
+        <button mat-raised-button routerLink="/accesorios">Volver</button>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+.navbar{
+    background-color: pink;
+}
+
+nav #carrito:hover {
+    text-decoration: none;
+    color: black;
+}
+
+matBadge{
+    background-color: pink;
+}

@@ -1,0 +1,12 @@
+<mat-card class="mb-3 card">
+    <div class="crop-img">
+      <a [routerLink]="['/chaquetas', chaquetas.id]">
+        <img mat-card-image [src]="chaquetas.image" alt="Imangen del producto">
+      </a>
+    </div>
+    <h3> {{ chaquetas.title }} </h3>
+    <mat-card-subtitle> {{ chaquetas.price | currency }} </mat-card-subtitle>
+    <mat-card-actions>
+      <button (click)="addCart()" mat-stroked-button color="accent"> <span>Agregar al carrito</span> </button>
+    </mat-card-actions>
+</mat-card>

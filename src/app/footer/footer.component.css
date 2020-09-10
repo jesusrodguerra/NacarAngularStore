@@ -1,0 +1,33 @@
+footer {
+    padding: 50px 0px;
+    margin-top: 20px;
+    background-color: pink;
+}
+
+
+.box h3 {
+    color: grey;
+}
+
+.box input{
+color: black;
+}
+
+.box ul {
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+
+.box li {
+    margin: 10px 0px;
+}
+.box a {
+text-decoration: none;
+color: white;
+}
+
+.box a:hover{
+    transition: 2s;
+    border-bottom: 1px solid white;
+}

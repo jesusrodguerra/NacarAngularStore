@@ -1,0 +1,7 @@
+<div class="detalle">
+    <div *ngIf="modaId">
+        <h1> {{ modaId.title }} </h1>
+        <img [src]="modaId.image" alt="Imagen Moda">
+        <button mat-button routerLink="/moda">Volver</button>
+    </div>
+</div>

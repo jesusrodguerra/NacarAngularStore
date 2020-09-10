@@ -1,0 +1,12 @@
+.card {
+    max-width: 300px;
+}
+
+button{
+    width: 100%;
+    padding: 2px;
+}
+
+button span{
+    font-size: 12px;
+}

@@ -1,0 +1,10 @@
+<mat-card class="card">
+  <mat-card-header class="d-flex justify-content-center">
+    <mat-card-title> {{ galeria.titulo }} </mat-card-title>
+  </mat-card-header>
+  <hr>
+  <a [routerLink]="galeria.ruta">
+    <img mat-card-image [src]="galeria.imagen" alt="Seccion">
+  </a>
+  <hr>
+</mat-card>

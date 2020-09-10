@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "nacarstore-a422f": {
+      "hosting": {
+        "nacarAngular": [
+          "nacarstore-a422f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "nacarstore-a422f"
+  }
+}
